@@ -1,0 +1,23 @@
+.cardItem
+    display: flex
+    flex-direction: column
+    background-color: darken(gray, 30%)
+    padding: 10px
+    gap: 5px
+    cursor: pointer
+    color: lighten(black, 90%)
+    border-radius: 12px
+
+    &:hover
+        background-color: lighten(darken(gray, 30%), 20%)
+    .title
+        font-size: 18px
+        font-weight: 600
+        letter-spacing: 0.05rem
+        word-wrap: break-word
+
+    .footInfo
+        display: flex
+        align-items: center
+        gap: 5px
+        justify-content: flex-end

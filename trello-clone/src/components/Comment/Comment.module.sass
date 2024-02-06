@@ -1,0 +1,42 @@
+
+.comment
+    display: flex
+    gap: 15px
+    align-items: flex-start
+    overflow: hidden
+    .userIcon
+        display: flex
+        align-items: center
+        overflow: hidden
+
+        img
+            flex: 0 0 42px
+            width: 42px
+            height: 42px
+    .mainBlock
+
+        flex: 1
+        display: flex
+        flex-direction: column
+        gap: 5px
+        .userName
+
+            font-size: 18px
+        .commentText
+            resize: none
+            min-height: 100px
+            max-height: 150px
+            font-size: 14px
+            outline: none
+            padding: 16px 16px
+            background: #131313
+            color: white
+            border-radius: 12px
+            border: 2px solid darken(gray, 30% )
+
+            &:hover, &:focus-within, &:active
+                border: 2px solid darken(lightblue, 20%)
+        .actions
+            display: flex
+            align-self: flex-end
+            gap: 20px
