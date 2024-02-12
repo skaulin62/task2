@@ -1,17 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.sass";
-import { TrelloContextProvider } from "./context/context.tsx";
+import App from "./app";
 
 const root = document.getElementById("root");
 
 if (root) {
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
-      <TrelloContextProvider>
-        <App />
-      </TrelloContextProvider>
+      <App />
     </React.StrictMode>
   );
 }
